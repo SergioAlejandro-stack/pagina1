@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Servicios - Eco-Huerto</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #fff;
+  color: #333;
+  flex-wrap: wrap;
+}
+.logo {
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+.logo span {
+  font-size: 12px;
+  display: block;
+  font-weight: normal;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: #00aa55;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #333;
+}
+.header {
+  background-color: #65a137;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+.header h1 {
+  font-size: 2.5rem;
+}
+.header p {
+  font-style: italic;
+  max-width: 800px;
+  margin: 15px auto 0;
+}
+.services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  padding: 30px;
+  gap: 20px;
+}
+
+.service-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #65a137;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 1.2rem;
+  color: #65a137;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1rem;
+  font-style: italic;
+  color: #555;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 15px rgba(101, 161, 55, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+
+</head>
+<body>
+
+  <nav class="navbar">
+  <div class="logo">🌿 <strong>ECO-HUERTO</strong> <span>De la granja a tu cocina.</span></div>
+  <ul class="nav-links">
+    <li><a href="Inicio.html">Inicio</a></li>
+    <li><a href="Nosotros.html">Acerca de nosotros</a></li>
+    <li><a href="Servicio.html">Servicio</a></li>
+    <li><a href="Galeria.html">Galeria</a></li>
+    <li><a href="Contacto.html">Contactos</a></li>
+  </ul>
+</nav>
+
+<!-- Encabezado -->
+<div class="header">
+  <h1>Servicios de Eco-Huerto</h1>
+  <p>La app de Eco-Huerto te ayuda a mantener y cuidar tu huerto de manera inteligente, para que disfrutes al máximo tu experiencia cultivando en casa.</p>
+</div>
+
+<!-- Sección de servicios (textos) -->
+<!-- Sección de servicios con imagen incluida en cada rectángulo -->
+<div class="services">
+  <div class="service-item">
+    <img src="1.jpg" alt="Control y cuidado de tu huerto">
+    <h3>Control y Cuidado</h3>
+    <p>Te ayudamos a mantener un control continuo de tu huerto para garantizar que todas tus plantas reciban la atención que merecen.</p>
+  </div>
+  <div class="service-item">
+    <img src="2.jpg" alt="Calendario inteligente">
+    <h3>Calendario Inteligente</h3>
+    <p>Recibe notificaciones personalizadas para regar, fertilizar y cosechar en el momento perfecto para cada planta.</p>
+  </div>
+  <div class="service-item">
+    <img src="3.jpg" alt="Variedad de frutas y verduras">
+    <h3>Variedad de Frutas y Verduras</h3>
+    <p>Explora un amplio catálogo de frutas y hortalizas para cultivar en tu huerto urbano, con detalles para cada especie.</p>
+  </div>
+  <div class="service-item">
+    <img src="4.jpg" alt="Recetas saludables">
+    <h3>Recetas Saludables</h3>
+    <p>Accede a recetas para sacar el máximo provecho a tu cosecha y crear platillos frescos y deliciosos para toda la familia.</p>
+  </div>
+</div>
+
+</body>
+</html>

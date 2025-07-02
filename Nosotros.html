@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Acerca de Nosotros</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+/* ==========================
+   Navbar Styles
+========================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #fff;
+  color: #333;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+.logo {
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+.logo span {
+  font-size: 12px;
+  display: block;
+  font-weight: normal;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: #00aa55;
+}
+
+/* ==========================
+   Main Styles
+========================== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #65a137;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.content {
+  padding: 40px 20px;
+  margin-top: 100px; /* PARA SEPARAR EL CONTENIDO DE LA NAVBAR FIJA */
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.intro {
+  font-style: italic;
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-items: center;
+}
+.item {
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.item h3 {
+  font-size: 1.3rem;
+  color: #333;
+}
+.item p {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #555;
+}
+.icon {
+  font-size: 3rem;
+  color: #65a137;
+  margin-bottom: 10px;
+}
+.item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 30px rgba(0,0,0,0.25);
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar Section -->
+<nav class="navbar">
+  <div class="logo">🌿 <strong>ECO-HUERTO</strong> <span>De la granja a tu cocina.</span></div>
+  <ul class="nav-links">
+    <li><a href="Inicio.html">Inicio</a></li>
+    <li><a href="Nosotros.html">Acerca de nosotros</a></li>
+    <li><a href="Servicio.html">Servicio</a></li>
+    <li><a href="Galeria.html">Galeria</a></li>
+    <li><a href="Contacto.html">Contactos</a></li>
+  </ul>
+</nav>
+
+<!-- Main Section -->
+<div class="content">
+  <h1>Acerca de nosotros.</h1>
+  <p class="intro">En Eco-Huerto, creemos que cultivar un mundo más saludable y sostenible está al alcance de todos. Somos un proyecto comprometido con la promoción de la agricultura ecológica mediante una plataforma innovadora y accesible para usuarios de todas las edades y niveles de experiencia.</p>
+  <!-- Resto del contenido (grid) va AQUÍ -->
+</div>
+
+<div class="grid">
+  <div class="item">
+    <img src="HUERTO.JPG" alt="Ovejas en el campo">
+  </div>
+
+  <div class="item">
+    <div class="icon">🍃</div>
+    <h3>¿Por qué elegir Eco-Huerto?</h3>
+    <p>Porque ofrecemos una forma sencilla, guiada y accesible de comenzar tu propio huerto ecológico en casa. Nuestra plataforma está pensada para todo tipo de usuarios, sin importar su edad o conocimientos previos, y te acompaña en cada etapa del cultivo con consejos prácticos y herramientas interactivas.</p>
+  </div>
+
+  <div class="item">
+    <img src="INTE.JPG" alt="Fresas frescas">
+  </div>
+
+  <div class="item">
+    <div class="icon">🐑</div>
+    <h3>Lo que nos hace diferentes</h3>
+    <p>Nos enfocamos en la educación, la accesibilidad y el impacto positivo. No solo brindamos una herramienta tecnológica, sino que creamos una experiencia completa, amigable y educativa, donde cada usuario aprende, se motiva y forma parte de una comunidad comprometida con el cambio.</p>
+  </div>
+
+  <div class="item">
+    <img src="MISION.JPG" alt="Calabazas orgánicas">
+  </div>
+
+  <div class="item">
+    <div class="icon">🚜</div>
+    <h3>Nuestra misión</h3>
+    <p>Empoderar a los agricultores y profesionales del sector agrícola a través de herramientas innovadoras y accesibles para mejorar la productividad y sostenibilidad.</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+

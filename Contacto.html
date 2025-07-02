@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto - ECO-HUERTO</title>
+    <!-- Font Awesome CDN para iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-pOeDE+0yxN9RIEqA2F3XhHgCMV4bXWQYp5NQOq++5k+XZsVF6uR9wq09j3zO4tgz9qxV0+Ffs3uPpgR8Q0xC9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5fff0;
+            color: #333;
+        }
+
+        .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #fff;
+  color: #333;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+.logo {
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+.logo span {
+  font-size: 12px;
+  display: block;
+  font-weight: normal;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: #00aa55;
+}
+
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            gap: 30px;
+            min-height: calc(100vh - 80px);
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-header h1 {
+            font-size: 2.5rem;
+            color: #388e3c;
+        }
+
+        .social-icons img {
+            border-radius: 10%;
+        }
+
+        .contact-header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .contact-form {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .contact-form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #388e3c;
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-form textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            background-color: #388e3c;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border: none;
+        }
+
+        .contact-form button:hover {
+            background-color: #2f7b2f;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+            color: #666;
+            font-size: 1rem;
+            max-width: 600px;
+        }
+
+        .contact-info i {
+            color: #388e3c;
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            gap: 30px;
+            font-size: 2rem;
+            border-radius: 5px;
+        }
+
+        .social-icons a {
+            color: #388e3c;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #2f7b2f;
+        }
+
+        @media (max-width: 640px) {
+            .nav-links {
+                gap: 10px;
+            }
+            .nav-links a {
+                font-size: 16px;
+            }
+            .contact-form {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+  <div class="logo">🌿 <strong>ECO-HUERTO</strong> <span>De la granja a tu cocina.</span></div>
+  <ul class="nav-links">
+    <li><a href="Inicio.html">Inicio</a></li>
+    <li><a href="Nosotros.html">Acerca de nosotros</a></li>
+    <li><a href="Servicio.html">Servicio</a></li>
+    <li><a href="Galeria.html">Galeria</a></li>
+    <li><a href="Contacto.html">Contactos</a></li>
+  </ul>
+</nav>
+
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para ayudarte con tus preguntas y consultas sobre Eco-Huerto. ¡Escríbenos!</p>
+        </div>
+
+        <form class="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required />
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+
+        <div class="contact-info">
+            <p><i class="fas fa-phone"></i> +52 123 456 7890</p>
+            <p><i class="fas fa-envelope"></i> info@eco-huerto.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Calle Verde #123, Ciudad Agricultora, México</p>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1LuV98XYNB/" target="_blank" aria-label="Facebook" >
+                    <img src="feis.png" class="feis">
+                    <i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/ecohuerto.of/" target="_blank" aria-label="Instagram">
+                    <img src="insta.png">
+                    <i class="fab fa-instagram-square"></i></a>
+                <a href="https://wa.me/5211234567890" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp-square"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+
+.top-bar {
+  background-color: #f4f4f4;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.contact-info span {
+  margin-right: 20px;
+}
+
+.social-icons a {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo span {
+  font-weight: normal;
+  font-size: 12px;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00aa55;
+}
+/* ===============================
+   SECCIÓN HERO CON VIDEO
+================================== */
+.hero {
+  position: relative;
+  height: 100vh; /* Ahora abarcará toda la altura de la ventana */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;           /* El video abarcará toda la anchura */
+  height: 100%;          /* El video abarcará toda la altura */
+  object-fit: cover;     /* El video se recorta para llenar toda el área */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.overlay h1 span {
+  color: #ff9500;
+}
+
+
+/* ===============================
+   SECCIÓN DE PRODUCTOS
+================================== */
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 30px;
+  background-color: #222;
+}
+
+.products .product-intro {
+  flex: 1 1 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+  color: #eee;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.products .product-intro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+.products .product-intro h2 {
+  font-size: 2.5rem;
+  color: #ffcc00;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.products .product-intro p {
+  color: #ffffff; /* blanco puro */
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 10px 0 15px;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7); /* sombra suave para mejorar legibilidad */
+  letter-spacing: 0.02em;
+}
+
+.products .product-intro p:hover {
+  color: #ffd966; /* color cálido para interacción */
+  cursor: default;
+}
+
+
+
+.products .product-intro a {
+  color: #ff9500;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.products .product-item {
+  flex: 1 1 30%;
+  padding: 20px;
+  text-align: center;
+}
+
+.products .product-item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.products .product-item h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #f0f0f0; /* blanco suave */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7); /* sombra suave para mejorar legibilidad */
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  transition: color 0.3s ease;
+}
+
+.products .product-item h3:hover {
+  color: #ffd700; /* color dorado atractivo al pasar el mouse */
+  cursor: pointer;
+
+}
+.product-item p {
+  color: #fff; /* blanco puro para máxima legibilidad */
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 12px 0 20px;
+  font-family: 'Open Sans', sans-serif;
+ text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+  letter-spacing: 0.02em;
+  transition: color 0.3s ease;
+}
+
+.product-item p:hover {
+  color: #ffd966; /* un verde suave para interacción */
+  cursor: default;
+}
+
